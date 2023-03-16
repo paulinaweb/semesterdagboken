@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+* {
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word; }
+	*:focus {
+	  outline: 0; }
+
+
+body{
+    font-family: 'Tangerine', 'sans-serif';
+}
+.slider{
+    position: a;
+    width: 100%;
+    height: 100vh; 
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+ }
+    .menu {
+        display: flex;
+        text-align: center;
+        padding: 5vh;
+        height:10vh;
+        justify-content: center;
+        align-items: center;
+        margin: auto 0;
+    }
+    .main-nav {
+        display: flex;
+        list-style: none;
+        font-family: 'Tangerine';
+        font-size: 2rem;
+        align-items: center;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        justify-content: center;
+    }
+    li {
+        padding: 2rem;
+    }
+    a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+.sticky {
+  width: 100%;
+  text-align: center;
+}
+ 
+ .slider-container{
+     justify-content: center;
+     text-align: center;
+     padding-top: 20rem;
+     padding-bottom: 20rem;
+ }
+h1 {
+    margin-bottom: -10px;
+    font-size: 130px;
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.desc {
+    margin:30px 0;
+    font-size: 70px;
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+.slider {
+    position:absolute;
+    top: 0;
+    left: 0;
+    padding-bottom: 1px;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+.header-video {
+    position: relative;
+    margin-bottom: 3rem;
+}
+/***********Texten vid text-linjen**********************/  
+h5.section-title {
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid;
+    font-size: 18px;
+    font-size: 3rem; 
+}
+
+/***************Avståndet mellan raden med text i mitten och inlägget************** */
+.home-widget {
+	padding: 50px 0;
+	background: var(--bg-color);
+	color: var(--text-color); 
+}
+
+/***********Linjen vid text-linjen**********************/  
+.section-header.align-center {
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 35px;
+	text-align: center; 
+}
+	.section-header.align-center h5.section-title {
+	  position: relative;
+	  display: inline-block;
+	  padding-bottom: 0;
+	  margin-bottom: 0;
+	  text-align: center;
+	  border-bottom: none; 
+    } 
+
+/***********Linjen som har text******************/
+	.section-header.align-center h5.section-title:before, .section-header.align-center h5.section-title:after {
+		position: absolute;
+		top: 60%;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+		display: block;
+		width: 20vw;
+		height: 2px;
+		background: currentColor;
+		content: ""; 
+    }
+	.section-header.align-center h5.section-title:before {
+		left: -30px;
+		-webkit-transform: translate(-100%, -50%);
+		-ms-transform: translate(-100%, -50%);
+		transform: translate(-100%, -50%); 
+    }
+	.section-header.align-center h5.section-title:after {
+		right: -30px;
+		-webkit-transform: translate(100%, -50%);
+		-ms-transform: translate(100%, -50%);
+		transform: translate(100%, -50%); 
+    }
+
+/******************Inläggets rubrik avstånd från stycket***************************************/
+.posts .post .post-content .post-header,
+.posts .post .post-content .post-excerpt {
+margin-bottom: 15px; 
+}
+
+
+/***********Inlägget***********/
+@media screen and (min-device-width: 500px) {
+.posts.column-1 .post .post-content {
+padding: 15px; 
+}	
+.posts.layout-list .post {
+-webkit-align-items: center;
+-ms-flex-align: center;
+align-items: center;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-flex-wrap: wrap;
+-ms-flex-wrap: wrap;
+flex-wrap: wrap; 
+-ms-flex-direction: column;
+
+}
+.posts.layout-list .post .post-content > *, .posts.post .post-content > * {
+width: 100%; 
+}
+.posts.layout-list .featured-img {
+width: calc(50% - 30px); calc(100vw - 2rem)
+}
+.posts.layout-list .featured-img + .post-content {
+width: 50%; 
+}
+
+
+h2 {
+    font-size: 3rem;;
+   }
+
+   p {
+    font-size: 2rem;
+   }
+
+   li {
+    padding: 2rem;
+}
+}
+/*här centrering*/
+.post {
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    flex-direction: column;
+    justify-content: center;
+}
+ 
+    /****************Inläggets datum********************/
+.post-meta .meta-item {
+    position: relative;
+    display: inline-block;
+    padding-right: 20px;
+    font-size: 12px;
+    font-size: 2rem;  /***************** Datumet storlek*****************/
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: capitalize; 
+}
+    
+    /****************Inlägg********************/
+   h2 {
+    font-size: 3rem;;
+   }
+
+   p {
+    font-size: 2rem;
+   }
+    
+    /******************Inläggets bild***************************************/
+    .posts .post .featured-img-container, .posts .post.format-gallery .featured-img .image-gallery .gallery-item div {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 0;
+    padding-top: 35rem;
+    padding-bottom: 2rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+    
+}
+
+
+
+/*<img 
+  alt="A baby smiling with a yellow headband."
+  srcset="
+    baby-s.jpg  300w,
+    baby-m.jpg  600w,
+    baby-l.jpg  1200w,
+    baby-xl.jpg 2000w
+  "
+  sizes="70vmin"
+>*/
+
